@@ -1,0 +1,366 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1744032977441
+  modified: 1744032977441
+  description: ""
+collection:
+  - url: http://localhost:3000/Clientes/1
+    name: Delete Clientes
+    meta:
+      id: req_cad3963098444c9da280d959d56e3c3e
+      created: 1779403034634
+      modified: 1779403334071
+      isPrivate: false
+      description: ""
+      sortKey: -1779403034634
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/Clientes/1
+    name: Atualizar Clientes
+    meta:
+      id: req_b87b6ae20e2c482f8f88f47749122561
+      created: 1779403038249
+      modified: 1779403701977
+      isPrivate: false
+      description: ""
+      sortKey: -1779403038249
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "João Silva Alterado",
+          "email": "joao.silva@email.com",
+          "telefone": "11988887777",
+          "cpf": "12345678901"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/Clientes
+    name: Cadastrar Clientes
+    meta:
+      id: req_aa925bade1eb4c2dbf64d8b2e0d4a216
+      created: 1779403040232
+      modified: 1779403287305
+      isPrivate: false
+      description: ""
+      sortKey: -1779403040232
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "João Silva",
+          "email": "joao.silva@email.com",
+          "telefone": "11999998888",
+          "cpf": "12345678901"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/Clientes
+    name: "Listar Clientes "
+    meta:
+      id: req_faef8f8416154596b9799e92e6354797
+      created: 1779403042049
+      modified: 1779403289803
+      isPrivate: false
+      description: ""
+      sortKey: -1779403042049
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/funcionarios
+    name: Listar Funcionarios
+    meta:
+      id: req_a103034cfa634403849755e9c59e1d67
+      created: 1779403141418
+      modified: 1779403388640
+      isPrivate: false
+      description: ""
+      sortKey: -1779403041140.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/funcionarios
+    name: Cadastrar Funcionarios
+    meta:
+      id: req_58517a5b10d2499eac5cda5e623ecfe6
+      created: 1779403156206
+      modified: 1779403363704
+      isPrivate: false
+      description: ""
+      sortKey: -1779403039240.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Carlos Souza",
+          "email": "carlos.souza@empresa.com",
+          "telefone": "11988887777",
+          "cargo": "Desenvolvedor Backend",
+          "setor": 2
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/funcionarios/funcionarioses/1
+    name: Atualizar Funcionarios
+    meta:
+      id: req_c5feaaf0ce6b49a1a4bc2a62e3db902c
+      created: 1779403170779
+      modified: 1779403426826
+      isPrivate: false
+      description: ""
+      sortKey: -1779403036441.5
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Carlos Souza Alterado",
+          "email": "carlos.souza@empresa.com",
+          "telefone": "11988889999",
+          "cargo": "Desenvolvedor Fullstack",
+          "setor": 3
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/funcionarios/funcionarioses/1
+    name: Delete Funcionarios
+    meta:
+      id: req_71b1a0b774374a4f93ea861c86eb41ed
+      created: 1779403186706
+      modified: 1779403438142
+      isPrivate: false
+      description: ""
+      sortKey: -1779403034584
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/produtos
+    name: Listar Produtos
+    meta:
+      id: req_167be2a2bf3846f79b5bed456307e272
+      created: 1779403194450
+      modified: 1779403460644
+      isPrivate: false
+      description: ""
+      sortKey: -1779403041594.75
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/produtos
+    name: Cadastrar Produtos
+    meta:
+      id: req_7dd721e33eea41a0a9828a9c705352e1
+      created: 1779403206916
+      modified: 1779403462915
+      isPrivate: false
+      description: ""
+      sortKey: -1779403039736.25
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Arroz 5kg",
+          "lote": 1010,
+          "quantidade": "50 unidades",
+          "preco": "25.90",
+          "vencimento": 20251231
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/produtos/1
+    name: Atualizar Produtos
+    meta:
+      id: req_9f1063f892604054928965b09a63e329
+      created: 1779403227744
+      modified: 1779403497927
+      isPrivate: false
+      description: ""
+      sortKey: -1779403037345.25
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Arroz 5kg Premium",
+          "quantidade": "45 unidades",
+          "preco": "29.90"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/produtos/1
+    name: Delete Produtos
+    meta:
+      id: req_905db29d495d497d9750539a61b23f1a
+      created: 1779403235276
+      modified: 1779403483337
+      isPrivate: false
+      description: ""
+      sortKey: -1779403034609
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744032992645
+    modified: 1744032992645
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744032992342
+    modified: 1744032992342
+    isPrivate: false
