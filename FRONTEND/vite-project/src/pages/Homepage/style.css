@@ -1,6 +1,93 @@
-.home-page{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.home-page {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 4rem;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  margin-top: 2rem;
+  
+  /* Centraliza o conteúdo internamente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
 }
 
+.home-page h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
 
+.home-page p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Adicione no style.css da HomePage */
+
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0; /* Removemos o padding antigo para usar o do main */
+  box-shadow: none;
+  background: transparent;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas iguais */
+  gap: 1.5rem; /* Espaço entre os cards */
+}
+
+/* O estilo do Card individual (as caixas brancas da imagem) */
+.card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Classe utilitária para fazer um card ocupar 2 colunas */
+.col-span-2 {
+  grid-column: span 2;
+}
+
+/* Classe utilitária para fazer um card ocupar a linha inteira (3 colunas) */
+.col-span-3 {
+  grid-column: span 3;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}

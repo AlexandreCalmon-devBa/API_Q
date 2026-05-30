@@ -1,13 +1,46 @@
-.header{
-    background-color: #333;
-    color: white;
-    display: flex;
-    align-items: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: transparent;
 }
 
-
-nav a{
-    color:white;
-    text-decoration: none;
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f0f3f8; /* Fundo sutil para englobar os links */
+  padding: 0.5rem;
+  border-radius: var(--radius-pill);
+}
+
+.header nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--radius-pill);
+  transition: all 0.3s ease;
+}
+
+.header nav a:hover {
+  color: var(--text-primary);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Simulando o link ativo (botão preto da imagem). 
+   Dica: No React Router, você pode usar o NavLink depois para aplicar uma classe 'active' automaticamente */
+.header nav a:first-child {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}

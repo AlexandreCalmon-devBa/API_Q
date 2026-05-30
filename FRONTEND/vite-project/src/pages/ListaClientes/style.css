@@ -1,0 +1,72 @@
+.lista-clientes {
+  width: 100%;
+  background-color: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-soft);
+  animation: fadeInList 0.4s ease-in-out;
+}
+
+.lista-clientes h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.tabela-clientes {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabela-clientes th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.tabela-clientes td {
+  padding: 1.2rem 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+.tabela-clientes tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.tabela-clientes tbody tr:hover {
+  background-color: #f8fafc;
+  cursor: pointer;
+}
+
+.tabela-clientes tbody tr:hover td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.tabela-clientes tbody tr:hover td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.tabela-clientes tbody:empty::after {
+  content: "Nenhum cliente encontrado.";
+  display: block;
+  padding: 2rem 1.5rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+@keyframes fadeInList {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

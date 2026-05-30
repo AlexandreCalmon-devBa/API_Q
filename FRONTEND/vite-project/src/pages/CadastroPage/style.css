@@ -1,0 +1,102 @@
+/* Container para centralizar o formulário na tela do dashboard */
+.cadastro-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  /* Animação suave ao abrir a página */
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* O formulário agindo como um Card branco */
+.cadastro-page form {
+  background-color: var(--bg-card);
+  width: 100%;
+  max-width: 500px; /* Limita a largura para não esticar muito em telas grandes */
+  padding: 3rem;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Cria um espaçamento automático entre os form-grupos */
+}
+
+/* Agrupamento de Label e Input */
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.form-grupo label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-left: 0.5rem; /* Leve recuo para alinhar visualmente com o input arredondado */
+}
+
+/* Estilização dos Inputs moderna e limpa */
+.form-grupo input {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background-color: #f3f4f6; /* Fundo cinza bem claro */
+  border: 2px solid transparent;
+  border-radius: 16px; /* Borda intermediária, nem quadrada nem pílula total */
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-grupo input::placeholder {
+  color: #9ca3af;
+}
+
+/* Efeito ao clicar no input (Focus) */
+.form-grupo input:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: var(--accent-color); /* Borda fica preta/escura ao digitar */
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.05); /* Halo sutil ao redor */
+}
+
+/* Estilização do Botão Submit */
+.cadastro-page button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Efeito Hover do botão */
+.cadastro-page button:hover:not(:disabled) {
+  opacity: 0.85;
+  transform: translateY(-2px); /* Dá uma leve "levantada" ao passar o mouse */
+}
+
+/* Estado de carregamento (Disabled) */
+.cadastro-page button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Keyframe para a animação de entrada */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(15px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
